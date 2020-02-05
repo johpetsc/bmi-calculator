@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 
-const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,11 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sendMessage(view: View) {
-        val editText = findViewById<EditText>(R.id.editText)
-        val message = editText.text.toString()
-        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
-        }
+        val intent = Intent(this, DisplayMessageActivity::class.java)
         startActivity(intent)
     }
 }
