@@ -28,6 +28,7 @@ class DisplayMessageActivity : AppCompatActivity() {
         val message = imc.toString()
         val intent = Intent(this, ResultActivity::class.java).apply {
             putExtra(EXTRA_MESSAGE, message)
+            putExtra("imc", imc)
         }
         startActivity(intent)
     }

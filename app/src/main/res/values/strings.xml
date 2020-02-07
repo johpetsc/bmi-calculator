@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Calculadora de IMC</string>
-    <string name="bem_vindo">Seja bem vindo(a) à calculadora de IMC Johannes 2000!</string>
+    <string name="bem_vindo">Bem vindo(a) à calculadora de IMC Johannes 2000!</string>
     <string name="button_send">Calcular!</string>
     <string name="result_message">Resultado</string>
     <string name="amar_fana">Eu amo a fana!</string>
@@ -12,4 +12,18 @@
     <string name="homem">Homem</string>
     <string name="mulher">Mulher</string>
     <string name="resultado_imc">Seu IMC é:</string>
+    <string name="imc">IMC</string>
+    <string name="value_1">&lt; 18,5</string>
+    <string name="value_2">18,5 a 24,9</string>
+    <string name="value_3">25,0 a 29,9</string>
+    <string name="value_4">30,0 a 34,9</string>
+    <string name="value_5">35,0 a 39,9</string>
+    <string name="value_6">&gt; 40,0</string>
+    <string name="res_1">Magreza</string>
+    <string name="res_2">Saudável</string>
+    <string name="res_3">Sobrepeso</string>
+    <string name="res_4">Obesidade Grau I</string>
+    <string name="res_5">Obesidade Grau II</string>
+    <string name="res_6">Obesidade Grau III</string>
+    <string name="classificacao">Classificação</string>
 </resources>
