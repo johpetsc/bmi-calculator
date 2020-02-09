@@ -32,4 +32,8 @@ class DisplayMessageActivity : AppCompatActivity() {
         }
         startActivity(intent)
     }
+
+    fun goBack(view: View){
+        finish()
+    }
 }

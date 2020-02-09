@@ -11,6 +11,9 @@
         android:layout_width="match_parent"
         android:background="#C1FCAE"
         android:layout_height="match_parent"/>
+
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -27,9 +30,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="68dp"
         android:text="@string/calc_imc"
         android:textColor="#000000"
         android:textSize="36sp"
@@ -86,28 +89,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
-        style="@style/Base.AlertDialog.AppCompat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:alpha="1"
-        android:background="#03A9F4"
-        android:text="@string/homem"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textOff="@string/homem"
-        android:textOn="@string/homem"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
-
-    <ToggleButton
         android:id="@+id/toggleButton2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#EE80A6"
+        android:background="#4DEE80A6"
         android:text="@string/mulher"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textOff="@string/mulher"
@@ -115,10 +100,28 @@
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="@+id/toggleButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/toggleButton"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton" />
+        app:layout_constraintTop_toTopOf="@+id/toggleButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        style="@style/Base.AlertDialog.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:alpha="1"
+        android:background="#4D03A9F4"
+        android:text="@string/homem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textOff="@string/homem"
+        android:textOn="@string/homem"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.437" />
 
     <EditText
         android:id="@+id/editText"
@@ -209,5 +212,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
