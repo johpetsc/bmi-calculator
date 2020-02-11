@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TableRow
 import android.widget.TextView
@@ -17,6 +18,10 @@ class ResultActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView12).apply {
             text = message
+        }
+        val resultado = intent.getStringExtra("resultado")
+        val textView2 = findViewById<TextView>(R.id.textView15).apply {
+            text = resultado
         }
         val imageView = findViewById<ImageView>(R.id.ImageView)
         val tb1 = findViewById<TableRow>(R.id.tb1)
@@ -84,5 +89,8 @@ class ResultActivity : AppCompatActivity() {
             tb6.setBackgroundColor(Color.parseColor("#FF0000"))
             tb7.setBackgroundColor(Color.parseColor("#FF0000"))
         }
+    }
+    fun goBack(view: View){
+        finish()
     }
 }

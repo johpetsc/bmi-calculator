@@ -8,11 +8,41 @@
     tools:context=".DisplayMessageActivity">
 
     <ImageView
+        android:id="@+id/planoFundo"
+        android:background="#7EAAC0"
         android:layout_width="match_parent"
-        android:background="#C1FCAE"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#7EAAC0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#7EAAC0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#7EAAC0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView"
@@ -30,13 +60,13 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="16dp"
         android:text="@string/calc_imc"
         android:textColor="#000000"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -88,52 +118,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#4DEE80A6"
-        android:text="@string/mulher"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textOff="@string/mulher"
-        android:textOn="@string/mulher"
-        android:textStyle="bold"
-        android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleButton"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        style="@style/Base.AlertDialog.AppCompat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:alpha="1"
-        android:background="#4D03A9F4"
-        android:text="@string/homem"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textOff="@string/homem"
-        android:textOn="@string/homem"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.437" />
-
     <EditText
         android:id="@+id/editText"
-        android:layout_width="56dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         tools:visibility="visible" />
 
     <TextView
@@ -143,22 +135,20 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="kg"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editText" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="55dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView5" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <TextView
         android:id="@+id/textView10"
@@ -167,23 +157,21 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="m"
-        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editText3"
-        app:layout_constraintTop_toTopOf="@+id/editText3" />
+        app:layout_constraintStart_toEndOf="@+id/editText3" />
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="80dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
 
     <TextView
         android:id="@+id/textView11"
@@ -192,21 +180,19 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="anos"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.76" />
-
+        app:layout_constraintStart_toEndOf="@+id/editText2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="140dp"
         android:layout_height="74dp"
-        android:layout_marginBottom="40dp"
-        android:background="#009688"
-        android:onClick="calcIMC"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/startbutton"
+        android:onClick="notBlank"
         android:text="@string/button_send"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -215,8 +201,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="48dp"
-        android:layout_height="38dp"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -224,5 +210,36 @@
         android:onClick="goBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="112dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homem"
+        android:textSize="18sp"
+        android:onClick="checkH"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mulher"
+        android:textSize="18sp"
+        android:onClick="checkM"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/checkBox" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:background="#ffff8d"
+        android:background="#344955"
         android:layout_height="match_parent"/>
 
 
@@ -19,13 +19,12 @@
         android:layout_height="141dp"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
-        android:text="@string/bem_vindo"
+        android:text="@string/app_name"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:typeface="serif"
-        app:fontFamily="@font/bangers"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -34,12 +33,12 @@
 
     <Button
         android:id="@+id/button"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="348dp"
-        android:layout_height="219dp"
-        android:background="#FFFF8D"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/startbutton"
         android:gravity="center"
         android:onClick="sendMessage"
+        android:shape="oval"
         android:text="@string/button_send"
         android:textSize="50sp"
         android:textStyle="bold"
