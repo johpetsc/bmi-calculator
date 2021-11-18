@@ -2,7 +2,7 @@
     <string name="app_name">Calculadora de IMC</string>
     <string name="button_send">Calcular</string>
     <string name="result_message">Resultado</string>
-    <string name="amar_fana">Eu amo a fana!</string>
+    <string name="bottom_text">Bottom text!</string>
     <string name="calc_imc">Calcular IMC:</string>
     <string name="idade">Idade*:</string>
     <string name="altura">Altura*:</string>
